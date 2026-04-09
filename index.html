@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amiel Ramos – CV</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: rgb(18, 18, 18);
+            color: #e0e0e0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #2c2c2c;
+            padding: 20px 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            color: #e0e0e0;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #ffffff;
+        }
+        header h2 {
+            color: #ffffff;
+        }
+        .contact {
+            text-align: center;
+            margin: 10px 0;
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+        .section {
+            /* margin: 25px 0; */
+        }
+        .section h2 {
+            border-bottom: 2px solid #e74c3c;
+            display: inline-block;
+            padding-bottom: 5px;
+            margin-bottom: 0px;
+            font-size: 1.5rem;
+            color: #e74c3c;
+        }
+        .list, .experience ul, .projects ul, .others ul {
+            list-style: none;
+            padding: 0;
+        }
+        .list li, .experience ul li, .projects ul li, .others ul li {
+            margin: 8px 0;
+        }
+        .experience ul li span.title {
+            font-weight: bold;
+        }
+        a {
+            color: #ff6f61;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Amiel Ramos</h1>
+            <h2>Developer</h2>
+        </header>
+        <img src="foto.jpg" alt="Amiel Ramos Photo" style="display: block; margin: 0 auto; border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
+        <br><div class="contact"> +34 644 713 423 • amiel42004@gmail.com • Santander / Madrid </div>
+        <div class="section about">
+            <h2>About Me</h2>
+            <p>Motivated and persevering towards projects related to the interactive technology industry. Self-taught and capable of adapting quickly to new situations and experiences, and I maintain a fair organizational role in group work.</p>
+        </div>
+        <div class="section education">
+            <h2>Education</h2>
+            <ul class="list">
+                <li><span class="title">Game Development</span><br>Universidad Complutense de Madrid | 2023 - Today</li>
+            </ul>
+        </div>
+        <div class="section languages">
+            <h2>Languages</h2>
+            <ul class="list">
+                <li>Spanish: Native</li>
+                <li>English: Advanced, C2</li>
+            </ul>
+        </div>
+        <div class="section tools">
+            <h2>Tools</h2>
+            <ul class="list">
+                <li>Video editing software</li>
+                <li>Variety of programming languages</li>
+                <li>Full Windows and Office suite control</li>
+                <li>Music and sound editing software</li>
+                <li>Image editing software</li>
+                <li>3D modeling software</li>
+            </ul>
+        </div>
+        <div class="section experience">
+            <br><h2>Experience</h2>
+            <ul>
+                <li><span class="title">Coding Expertise (2019 - Today): </span> <br><br>
+                    <ul>
+                        <li><strong>Python:</strong> First started coding at age 14, using it for daily tasks.</li>
+
+                        <li><strong>C#:</strong> Focused on Unity game development since age 15, refined in my Game Development degree.</li>
+
+                        <li><strong>C++:</strong> Extensive experience and deep understanding through studying its complex layers and utilities.</li>
+
+                        <li><strong>JavaScript:</strong> Built web pages and Phaser3 game projects at university.</li>
+
+                        <li><strong>Java &amp; C:</strong> Solid understanding of its fundamentals, forming a strong base to use other languages.</li>
+
+                        <li><strong>Second position</strong> in Bituca 2022 programming tournament (Python).</li> <br><br>
+                        
+                    </ul>
+                </li>
+            
+
+                <li><span class="title">Others: </span> <br><br>
+                    <ul>
+                        <li><strong>Dîrok Finals staff: </strong>Assisted with event comfort, safety, and logistics.</li>
+                        <li><strong>Video</strong> editing and production.</li>
+                        <li><strong>Social media</strong> managing.</li>
+                        <li>Care and <strong>assistance</strong> with <strong>children</strong> for project development.</li>
+                    </ul>
+            </li></ul>
+        </div>
+        <div class="section projects">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Quantum Subconfusion - MPP</strong> (C#, Unity) • Local multiplayer spaceship jam game • <a href="https://diegocaballero.itch.io/quantum">Link</a></li>
+                <li><strong>I'm losing it</strong> (C#, Unity) • Puzzle-platformer, dementia based game • <a href="https://wither-the-hunter.itch.io/im-losing-it">Link</a></li>
+                <li><strong>Crazy Paw Pals</strong> (C++, SDL) • Cat Shooter Game</li>
+                <li><strong>Pinneaple O'Clock - RMGames</strong> (JavaScript, Phaser3) • Mercadona game project • <a href="https://diegocaballeroruiz.github.io/PVLI-GRUPO13/">Link</a></li>
+            </ul>
+        </div>
+        <div class="section others">
+            
+        </div>
+    </div>
+    <script>
+            // Variable para alternar entre modo claro y oscuro
+            let isDarkMode = true; // Cambiar a false para modo claro por defecto
+
+            function applyMode() {
+                const body = document.body;
+                const container = document.querySelector('.container');
+                const sections = document.querySelectorAll('.section h2');
+                const contact = document.querySelector('.contact');
+                const links = document.querySelectorAll('a');
+                const headerH1 = document.querySelector('header h1');
+                const headerH2 = document.querySelector('header h2');
+
+                if (isDarkMode) {
+                    // Aplicar modo oscuro
+                    body.style.background = 'rgb(18, 18, 18)';
+                    body.style.color = '#e0e0e0';
+                    container.style.background = '#2c2c2c';
+                    container.style.color = '#e0e0e0';
+                    sections.forEach(section => section.style.color = '#e74c3c');
+                    contact.style.color = '#b0b0b0';
+                    links.forEach(link => link.style.color = '#ff6f61');
+                    headerH1.style.color = '#ffffff';
+                    headerH2.style.color = '#ffffff';
+                } else {
+                    // Aplicar modo claro
+                    body.style.background = '#ffffff';
+                    body.style.color = '#333333';
+                    container.style.background = '#f9f9f9';
+                    container.style.color = '#333333';
+                    sections.forEach(section => section.style.color = '#e74c3c');
+                    contact.style.color = '#666666';
+                    links.forEach(link => link.style.color = '#e74c3c');
+                    headerH1.style.color = '#333333';
+                    headerH2.style.color = '#333333';
+                }
+            }
+
+            // Aplicar el modo al cargar la página
+            document.addEventListener('DOMContentLoaded', applyMode);
+        </script>
+</body></html>
